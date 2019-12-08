@@ -1,14 +1,11 @@
-SHIPPING ROUTES OUTPUT
-
-DATA SET  1
-
-NO SHIPMENT POSSIBLE
-$200
-$300
-$0
-
-DATA SET  2
-
-NO SHIPMENT POSSIBLE
-
-END OF OUTPUT
+-----
+1 3 6
+1 3 5
+2 1 4
+2 3 5
+3 6
+2 1
+-----
+9 7 3 4 8 10
+connection impossible
+9 6 2
