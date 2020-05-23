@@ -13,6 +13,8 @@ void build_z_function(const string &s, vector<int> &z) {
     for(int i = 1;i < n;i++) {
         if(i <= r)
             z[i] = min(r - i + 1, z[i - l]);
+        else
+            z[i] = 0;
 
         while(i + z[i] <= n && s[z[i]] == s[i + z[i]])
             z[i] ++;
