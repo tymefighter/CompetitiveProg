@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.19)  30 JUN 2020 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.6.19)  21 JUL 2020 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -204,30 +204,30 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 23.
+(Font)              <10> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 23.
+(Font)              <7> on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 23.
+(Font)              <5> on input line 19.
  [1
 
 {/usr/local/texlive/2020basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 8
-7.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+10.
 
 (/usr/local/texlive/2020basic/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \hbox (22.97295pt too wide) in paragraph at lines 90--91
+) [2]
+Overfull \hbox (22.97295pt too wide) in paragraph at lines 113--114
 []\OT1/lmr/m/n/10 https://stackoverflow.com/questions/39787455/is-it-possible-t
 o-query-number-
  []
 
-[2] (./goodIdeas.aux) ) 
+[3] (./goodIdeas.aux) ) 
 Here is how much of TeX's memory you used:
  1718 strings out of 482056
  23166 string characters out of 5937675
- 251713 words of memory out of 5000000
+ 250713 words of memory out of 5000000
  17402 multiletter control sequences out of 15000+600000
  571743 words of font info for 61 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -247,10 +247,10 @@ fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020basic/texmf-dist/fonts/
 type1/public/lm/lmr17.pfb></usr/local/texlive/2020basic/texmf-dist/fonts/type1/
 public/lm/lmr7.pfb></usr/local/texlive/2020basic/texmf-dist/fonts/type1/public/
 lm/lmsy10.pfb>
-Output written on goodIdeas.pdf (2 pages, 165600 bytes).
+Output written on goodIdeas.pdf (3 pages, 168123 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

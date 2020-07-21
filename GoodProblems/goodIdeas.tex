@@ -14,6 +14,29 @@
 
     \maketitle
 
+    \section{Maximum Number of Points that can be covered by a circle}
+
+    You are given a set of points $S$ in the X-Y plane. You are alse given
+    a the radius $r > 0$ of a circle which you must construct so as to maximize
+    the number of points from $S$ which lie inside or on the circle.
+
+    We initialize the answer by $1$ because we can construct the circle with
+    any of the points as the center. Now, consider an optimal solution $C$
+    which is a circle that covers the maximum number of points. If the number
+    of points covered by $C$ is $1$, then we already have the answer since we
+    initialize the answer by $1$. If the answer is greater than $1$, then
+    consider the cases where the number of points that lie on the circle are
+    less than $2$. The first case is when no point lies on the circle,
+    then we translate the circle until atleast one point lies on it (we may
+    end up in the second case by this). The second case is when a single point
+    lies on the circle, now we pivot the circle at this point and rotate until
+    atleast one more point is on the circle. Now that we have shown that an
+    optimal solution exists which has alteast two points on the circle. \\
+    We construct a solution by going over all possible pairs of points and
+    constructing circle, and for each constructed circle we count how many
+    points lie inside or on the circle. Then answer is the maximum over all
+    these values.
+
     \section{All lengths to which a string can be compressed}
 
     \section{Number Of Occurrances of Every Prefix}
