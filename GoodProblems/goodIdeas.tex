@@ -14,6 +14,21 @@
 
     \maketitle
 
+    \section{
+        Number of Distinct Substrings that occur atleast twice in a
+        given string
+    }
+
+    Essentially the solution is to add all those values of the lcp array
+    which are greater than the next value, and also add the final value in
+    the lcp array (i.e. the $n - 1$ indexed element). The lcp array is
+    constructed using the suffix array by Kasai's Algorithm. \\
+    The reason why this is true is that when $lcp[i] = x > 0$ for some i, then
+    we already have $x$ strings that occur atleast twice. But we cannot simply
+    add all the $lcp$ values since there may by substrings that are repeated.
+    We can see that if $lcp[i - 1] > lcp[i]$, then $lcp[i - 1] - lcp[i]$
+    substrings are unique, hence we can count them.
+
     \section{Maximum Number of Points that can be covered by a circle}
 
     You are given a set of points $S$ in the X-Y plane. You are alse given
