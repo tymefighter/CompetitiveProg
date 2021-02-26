@@ -14,6 +14,65 @@
 
     \maketitle
 
+    \section{Sum of Floor of Harmonic Progression}
+
+    \section{Maximum Area of a rectangle formed on a histogram array}
+
+    We are given an array of heights of histogram bars $h[0..n-1]$, we
+    must construct a rectangle with base formed by indices $\{l,..,r\}$
+    and height
+    \[
+        ht = \min_{j \in \{l,..,r\}}{h[j]}
+    \]
+    such that the area of the rectangle is maximum. \\
+    We solve this problem by computing for each $i \in \{0,..,n-1\}$ 
+    the maximum left and right indices of the base such that the height
+    of the rectangle remains $h[i]$. We do this by computing the following
+    two arrays $l$ and $r$:
+    \[
+        \forall i \in \{0,..,n-1\} ~
+            l[i] = j ~ such ~ that ~ \forall k \in \{j,..,i\} ~
+                h[k] \geq h[i]
+    \]
+    \[
+        \forall i \in \{0,..,n-1\} ~
+            r[i] = j ~ such ~ that ~ \forall k \in \{i,..,j\} ~
+                h[k] \geq h[i]
+    \]
+    Then the maximum area $maxArea$ would be as follows:
+    \[
+        maxArea = \max_{i \in \{0,..,n-1\}}{(r[i] - l[i] + 1) * h[i]}
+    \]
+    We can compute $l$ and $r$ using the following algorithm that uses a stack.
+    We describe the algorithm only for $l$, it can be run in reverse to compute
+    $r$ as well. When we process element indexed by $i$, we first remove all
+    the elements of the stack which have value less than $h[i]$, then if the
+    stack is empty we assign $l[i]$ zero, else we assign the index of the top
+    element in the stack. Then, we insert the current element along with its
+    index. \\
+    To see why this works, we need to show that the elements in the stack are
+    actually the results of repeated application of a particular function.
+    The function is as follows:
+    \[
+		\forall i \in \{0,..,n-1\}, ~ \phi(i) =
+            j ~ such ~ that ~ \forall k \in \{j,..,i\} ~
+            h[k] \geq h[i]
+    \]
+    Now, at the start of $ith$ iteration, the stack would contain the following
+    (left is top, right is bottom)
+    \[
+        stack = [i - 1, \phi(i - 1), \phi(\phi(i - 1)), ...]
+    \]
+    On completion of the ith iteration, the stack would become this
+    \[
+        stack = [i, \phi(i), \phi(\phi(i)), ...]
+    \]
+    The reason for this is that $\phi(i)$ must be inside the stack at the
+    start of the $ith$ iteration itself, then we remove elements until we find
+    it. If it were not so, then our assumption that the stack was correct at
+    the start of $ith$ iteration would be contradicted (this can be shown but I am
+    too lazy to do it).
+
     \section{
         Number of Distinct Substrings that occur atleast twice in a
         given string
