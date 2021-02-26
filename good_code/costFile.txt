@@ -1,0 +1,8 @@
+ 0  5 na na  2 na na na
+na  0  5 na  7 na na na
+na na  0  1 na na na na
+na  4  1  0 na na  9 na
+na na na  3  0  9 na na
+ 1 na na na na  0 na na
+na na na na na  2  0 na
+ 9 na na na na  2 na  0
