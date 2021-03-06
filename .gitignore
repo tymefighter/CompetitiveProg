@@ -1,3 +1,5 @@
-./*/a.out
-./*/test
-./*/output*
+**/a.out
+**/test
+**/output
+**/.DS_Store
+.DS_Store
